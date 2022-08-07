@@ -1,18 +1,18 @@
 provider "aws" {
   shared_config_files      = ["C:/Users/Jaca/terraform/.aws/conf"]
   shared_credentials_files = ["C:/Users/Jaca/terraform/.aws/creds"]
-#   profile                  = "customprofile"
+  profile                  = "s3s"
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "tf-bucket"
+resource "aws_s3_bucket" "freshbckt" {
+  bucket = "tfb1"
 
   tags = {
-    Name = "TF_bucket"
+    Name = "tfb1"
   }
 }
 
-resource "aws_s3_bucket_acl" "example" {
-  bucket = aws_s3_bucket.b.id
-  acl    = "public-read"
+resource "aws_s3_bucket_acl" "s3_acl" {
+  bucket = aws_s3_bucket.freshbckt.id
+  acl    = "private"
 }
