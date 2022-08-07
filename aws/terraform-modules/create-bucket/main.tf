@@ -1,9 +1,3 @@
-provider "aws" {
-  shared_config_files      = ["C:/Users/Jaca/terraform/.aws/conf"]
-  shared_credentials_files = ["C:/Users/Jaca/terraform/.aws/creds"]
-  profile                  = "s3s"
-}
-
 resource "aws_s3_bucket" "freshbckt" {
   bucket = "tfb1"
 
