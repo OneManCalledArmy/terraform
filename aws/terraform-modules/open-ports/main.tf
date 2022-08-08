@@ -5,7 +5,6 @@ resource "aws_security_group_rule" "open-ports" {
     from_port         = each.key
     to_port           = each.key
     protocol          = "tcp"
-    # cidr_blocks       = [aws_vpc.example.cidr_block]
-    # ipv6_cidr_blocks  = [aws_vpc.example.ipv6_cidr_block]
+    cidr_blocks      = ["0.0.0.0/0"]
     security_group_id = var.security_group_id
 }

@@ -21,3 +21,7 @@ variable "number_of_ec2" {
     type = number
     default = 1
 }
+
+variable "security_group_id" {
+  type = string
+}
