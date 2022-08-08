@@ -1,4 +1,9 @@
 .aws/
+<<<<<<< HEAD
 .terraform/
 .terraform*
 terraform.tfstate
+=======
+aws/.terraform/
+.terraform
+>>>>>>> 19ac9fafa3be54812e9d62efde33c5a45c76215e
