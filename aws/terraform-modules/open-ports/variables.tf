@@ -4,7 +4,6 @@ variable "ports" {
   default     = [80, 443]
 }
 
-# !!!
 variable "security_group_id" {
   type = string
 }
