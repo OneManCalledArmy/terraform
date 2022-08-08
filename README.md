@@ -10,9 +10,18 @@ Simple terraform projects
 
 Init:
 ---
+*BASH*
 terraform init -backend-config=backend.conf
+
+*POWERSHELL*
+terraform init -backend-config="backend.conf"
 
 Envs:
 ---
+*BASH*
 export AWS_ACCESS_KEY_ID=""
 export AWS_SECRET_ACCESS_KEY=""
+
+*POWERSHELL*
+Set-Variable -Name "AWS_ACCESS_KEY_ID" -Value ""
+Set-Variable -Name "AWS_SECRET_ACCESS_KEY" -Value ""
