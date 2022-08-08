@@ -1,3 +1,3 @@
 provider "aws" {
-  region = module.vm.region
+  region = var.region
 }

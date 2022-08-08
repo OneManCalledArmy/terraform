@@ -1,1 +1,3 @@
 .aws/
+aws/.terraform/
+.terraform
