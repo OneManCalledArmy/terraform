@@ -4,12 +4,12 @@ resource "aws_instance" "my-machine" {
   instance_type = var.instance_size
   security_groups = [var.security_group_id]
   subnet_id = "subnet-084fc8d3d42558fff"
-  key_name = "alien"
+  key_name = "aws-app"
   tags = {
     Name = "tf-vm-${count.index}"
   }
 
   provisioner "local-exec" {
-    command = "ansible-playbook playbooks/mysql.yaml -i ${self.public_ip} --private-key ~/.ssh/alien.pem"
+    command = "echo ${self.public_ip} >> /home/jacek/ansible/inventory/vms.ini"
   }
 }

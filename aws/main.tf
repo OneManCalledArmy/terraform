@@ -18,7 +18,7 @@ module "vm" {
     number_of_ec2 = 2
 }
 
-# module "run-playbook" {
-#     source = "./terraform-modules/run-ansible"
-#     public_ip = module.vm.output.public_ip
-# }
+module "run-playbook" {
+    source = "./terraform-modules/run-ansible"
+    public_ip = module.vm.public_ip
+}
