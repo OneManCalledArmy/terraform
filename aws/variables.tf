@@ -1,4 +1,5 @@
 # ok
+# clean test
 
 variable "region" {
   description = "AWS region"
