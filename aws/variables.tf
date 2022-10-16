@@ -1,4 +1,4 @@
-# new useless line
+# fkit
 
 variable "region" {
   description = "AWS region"
