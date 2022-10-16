@@ -11,7 +11,6 @@
 >>>>>>> 475e529 (branch/main --> first commit)
 
 
-
 variable "region" {
   description = "AWS region"
   type        = string
