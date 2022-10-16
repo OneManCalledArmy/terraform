@@ -1,4 +1,5 @@
 # new line
+# another new line
 
 variable "region" {
   description = "AWS region"
